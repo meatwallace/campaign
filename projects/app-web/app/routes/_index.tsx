@@ -1,5 +1,6 @@
 import { MetaFunction } from '@remix-run/node';
-import { LogInButton, SignUpButton } from '../components';
+import { Form } from '@remix-run/react';
+import { Brand, Button } from '../components';
 import * as styles from './_index.css.ts';
 
 export const meta: MetaFunction = () => [
@@ -14,15 +15,7 @@ export function Index() {
     <>
       <main className={styles.container}>
         <section className={styles.heroSection}>
-          <h1 className={styles.brandName}>
-            Chron
-            <img
-              alt="Chrononomicon brand icon"
-              src="/assets/images/brand-icon-light.png"
-              className={styles.brandIcon}
-            />
-            nomicon
-          </h1>
+          <Brand size="large" className={styles.brand} />
           <img
             alt="Book icon"
             className={styles.heroDescriptionIcon}
@@ -34,11 +27,17 @@ export function Index() {
         </section>
       </main>
       <section className={styles.authSection}>
-        <SignUpButton />
+        <Form action="/auth/auth0?screen_hint=signup" method="post">
+          <Button className={styles.signUpButton}>Sign up</Button>
+        </Form>
         <span className={styles.existingAccountText}>
           Already have an account?
         </span>
-        <LogInButton />
+        <Form action="/auth/auth0" method="post">
+          <Button color="transparent" className={styles.logInButton}>
+            Log in
+          </Button>
+        </Form>
       </section>
     </>
   );

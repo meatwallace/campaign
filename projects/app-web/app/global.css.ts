@@ -19,7 +19,7 @@ globalFontFace('Josefin Slab', {
     'url("/assets/fonts/josefin-slab-bold.woff2") format("woff2")',
     'url("/assets/fonts/josefin-slab-bold.woff") format("woff")',
   ],
-  fontWeight: '-bold',
+  fontWeight: 'bold',
 });
 
 globalFontFace('Karla', [
@@ -46,9 +46,13 @@ globalFontFace('Karla', [
   },
 ]);
 
-globalStyle('html, body', {
-  all: 'unset',
+globalStyle('*', {
   boxSizing: 'border-box',
+  margin: '0',
+  padding: '0',
+});
+
+globalStyle('html, body', {
   display: 'block',
   height: '100%',
 });
@@ -58,5 +62,5 @@ globalStyle('html', {
 });
 
 globalStyle('body', {
-  backgroundColor: '#07080b;',
+  backgroundColor: '#07080b',
 });

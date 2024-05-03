@@ -80,6 +80,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/parser", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:7.6.0"],\
           ["@typescript-eslint/utils", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:7.7.1"],\
           ["@vanilla-extract/css", "npm:1.15.1"],\
+          ["@vanilla-extract/recipes", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.5.2"],\
           ["@vanilla-extract/sprinkles", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:1.6.1"],\
           ["@vanilla-extract/vite-plugin", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.0.9"],\
           ["@vitejs/plugin-react", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.2.1"],\
@@ -87,6 +88,7 @@ const RAW_RUNTIME_STATE =
           ["@vitest/expect", "npm:1.5.2"],\
           ["@vitest/ui", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:1.5.2"],\
           ["auth0", "npm:4.3.1"],\
+          ["clsx", "npm:2.1.1"],\
           ["drizzle-kit", "npm:0.20.17"],\
           ["drizzle-orm", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.30.9"],\
           ["envalid", "npm:8.0.0"],\
@@ -3461,6 +3463,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/parser", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:7.6.0"],\
           ["@typescript-eslint/utils", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:7.7.1"],\
           ["@vanilla-extract/css", "npm:1.15.1"],\
+          ["@vanilla-extract/recipes", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.5.2"],\
           ["@vanilla-extract/sprinkles", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:1.6.1"],\
           ["@vanilla-extract/vite-plugin", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.0.9"],\
           ["@vitejs/plugin-react", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.2.1"],\
@@ -3468,6 +3471,7 @@ const RAW_RUNTIME_STATE =
           ["@vitest/expect", "npm:1.5.2"],\
           ["@vitest/ui", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:1.5.2"],\
           ["auth0", "npm:4.3.1"],\
+          ["clsx", "npm:2.1.1"],\
           ["drizzle-kit", "npm:0.20.17"],\
           ["drizzle-orm", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.30.9"],\
           ["envalid", "npm:8.0.0"],\
@@ -9837,6 +9841,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@vanilla-extract/recipes", [\
+      ["npm:0.5.2", {\
+        "packageLocation": "./.yarn/cache/@vanilla-extract-recipes-npm-0.5.2-8a609484e7-0ec9965ec7.zip/node_modules/@vanilla-extract/recipes/",\
+        "packageDependencies": [\
+          ["@vanilla-extract/recipes", "npm:0.5.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.5.2", {\
+        "packageLocation": "./.yarn/__virtual__/@vanilla-extract-recipes-virtual-29d5de7c59/0/cache/@vanilla-extract-recipes-npm-0.5.2-8a609484e7-0ec9965ec7.zip/node_modules/@vanilla-extract/recipes/",\
+        "packageDependencies": [\
+          ["@vanilla-extract/recipes", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.5.2"],\
+          ["@types/vanilla-extract__css", null],\
+          ["@vanilla-extract/css", "npm:1.15.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/vanilla-extract__css",\
+          "@vanilla-extract/css"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@vanilla-extract/sprinkles", [\
       ["npm:1.6.1", {\
         "packageLocation": "./.yarn/cache/@vanilla-extract-sprinkles-npm-1.6.1-e524ee399f-7ddd2ab7c8.zip/node_modules/@vanilla-extract/sprinkles/",\
@@ -10443,10 +10469,12 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.2.75"],\
           ["@types/react-dom", "npm:18.2.24"],\
           ["@vanilla-extract/css", "npm:1.15.1"],\
+          ["@vanilla-extract/recipes", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:0.5.2"],\
           ["@vanilla-extract/sprinkles", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:1.6.1"],\
           ["@vanilla-extract/vite-plugin", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.0.9"],\
           ["@vitejs/plugin-react", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.2.1"],\
           ["@vitest/expect", "npm:1.5.2"],\
+          ["clsx", "npm:2.1.1"],\
           ["eslint-plugin-jsx-a11y", "virtual:b4dbac12e8c0eac19977455c27007fa0bab83d73d73781bdd06afb97db468ee42cd13130e5a6cca03948b2e68a51074131e9ffe5919a808a1f95312007ab4bc4#npm:6.8.0"],\
           ["eslint-plugin-react", "virtual:b4dbac12e8c0eac19977455c27007fa0bab83d73d73781bdd06afb97db468ee42cd13130e5a6cca03948b2e68a51074131e9ffe5919a808a1f95312007ab4bc4#npm:7.34.1"],\
           ["eslint-plugin-react-hooks", "virtual:b4dbac12e8c0eac19977455c27007fa0bab83d73d73781bdd06afb97db468ee42cd13130e5a6cca03948b2e68a51074131e9ffe5919a808a1f95312007ab4bc4#npm:4.6.0"],\
@@ -10457,6 +10485,7 @@ const RAW_RUNTIME_STATE =
           ["jest-extended", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:4.0.2"],\
           ["jwt-decode", "npm:4.0.0"],\
           ["msw", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:2.2.14"],\
+          ["open-props", "npm:1.7.4"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:18.2.0"],\
           ["remix-auth", "virtual:78383247a788980a563098e2073e990e734a77581dbca923bae873812dc4cb4a3a6b3aada21cd1f75170c559d98bc43a8afb0e9951516e0e68c9288afbed8584#npm:3.6.0"],\
@@ -12145,6 +12174,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["clone-response", "npm:1.0.3"],\
           ["mimic-response", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["clsx", [\
+      ["npm:2.1.1", {\
+        "packageLocation": "./.yarn/cache/clsx-npm-2.1.1-96125b98be-c4c8eb865f.zip/node_modules/clsx/",\
+        "packageDependencies": [\
+          ["clsx", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -20910,6 +20948,15 @@ const RAW_RUNTIME_STATE =
           ["define-lazy-prop", "npm:2.0.0"],\
           ["is-docker", "npm:2.2.1"],\
           ["is-wsl", "npm:2.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["open-props", [\
+      ["npm:1.7.4", {\
+        "packageLocation": "./.yarn/cache/open-props-npm-1.7.4-7f0e2894f5-422e53a2c5.zip/node_modules/open-props/",\
+        "packageDependencies": [\
+          ["open-props", "npm:1.7.4"]\
         ],\
         "linkType": "HARD"\
       }]\
