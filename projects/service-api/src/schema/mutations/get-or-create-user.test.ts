@@ -21,7 +21,7 @@ test('it returns an existing user', async () => {
   server.use(jwks.handler);
 
   const accessToken = jwks.token({
-    sub: 'test_id',
+    sub: 'auth0|test_id',
     aud: env.API_IDENTIFIER,
     iss: `https://${env.AUTH0_DOMAIN}/`,
   });

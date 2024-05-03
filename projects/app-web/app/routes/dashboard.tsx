@@ -1,8 +1,8 @@
-import { useLoaderData, json } from '@remix-run/react';
+import { json, useLoaderData } from '@remix-run/react';
 import { MetaFunction } from '@remix-run/node';
-import { client } from '../client';
+import { Header } from '../components/header';
 import { graphql } from '../gql';
-import { LogOutButton } from '../components';
+import { client } from '../client';
 
 const GetCurrentUser = graphql(/* GraphQL */ `
   query GetCurrentUser {
@@ -13,11 +13,23 @@ const GetCurrentUser = graphql(/* GraphQL */ `
   }
 `);
 
-export const loader = async () => {
-  const { getCurrentUser } = await client.request(GetCurrentUser);
+const GetWorlds = graphql(/* GraphQL */ `
+  query GetWorlds($input: GetWorldsInput!) {
+    getWorlds(input: $input) {
+      id
+      name
+    }
+  }
+`);
 
-  return json({ user: getCurrentUser });
-};
+export async function loader() {
+  const [{ getCurrentUser }, { getWorlds }] = await Promise.all([
+    client.request(GetCurrentUser),
+    client.request(GetWorlds, { input: {} }),
+  ]);
+
+  return json({ user: getCurrentUser, worlds: getWorlds });
+}
 
 export const meta: MetaFunction = () => [
   {
@@ -27,12 +39,13 @@ export const meta: MetaFunction = () => [
 ];
 
 export function Dashboard() {
-  const { user } = useLoaderData<typeof loader>();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { user, worlds } = useLoaderData<typeof loader>();
 
   return (
     <>
-      <div>Hello, {user.name}</div>
-      <LogOutButton />
+      <Header user={user} />
+      <main>{/*  */}</main>
     </>
   );
 }
